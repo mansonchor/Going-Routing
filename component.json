@@ -4,7 +4,7 @@
   "description": "",
   "version": "0.6.0",
   "keywords": ["going", "routing"],
-  "scripts": ["index.js"],
+  "scripts": ["boot.js"],
   "dependencies": {
     "mansonchor/Going": "0.6.0",
     "mansonchor/Routing": "0.6.0"
