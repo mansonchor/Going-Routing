@@ -21,9 +21,9 @@ SPA如果去除掉业务代码部分，控制层无非是两样东西：路由�
 
 ##映射控制代码示例
 
-**Routing**使用文档：
+[**Routing使用文档**](https://github.com/mansonchor/Routing)
 
-**Going**使用文档：
+[**Going使用文档**](https://github.com/mansonchor/Going)
 
 
 ```javascript
