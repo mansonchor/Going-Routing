@@ -107,4 +107,8 @@ require.async(requireArr, function(Going,Routing)
 
 ![](http://mansonchor.github.io/mobile_web_frame/images/Routing_Going_demo.jpg)
 
-2. asasg
+2. 页面模块文件exports一个page_options，模块异步加载完成后，利用Going和page_options新增一个页面。完成路由对页面控制的映射
+
+[page_options详细参数](https://github.com/mansonchor/Going#page_controleradd_pagepage_id--page_options)
+
+3. 每个页面模块独立控制一个页面；通过Going暴露的各种事件加强对页面的控制 和 业务的支撑
