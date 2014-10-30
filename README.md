@@ -15,7 +15,7 @@ SPA如果去除掉业务代码部分，控制层无非是两样东西：路由�
 - 完整的路由页面映射控制解决方案，不需要再在业务里细化和支撑这种底层控制，低耦合
 - 使用代码自动生成的思路，通过业务配置来统一化和自动化生成业务底层控制代码，不需要重复写boot，页面引入自动生成的boot.js SPA即可运行
 - 框架里考虑到许多业务常见的控制需求，进行抽象和暴露方法、事件，方便业务使用
-- 只抽象到控制层，View和Model层留给业务自行处理
+- 只抽象到控制层，View和Model层留给业务自由发挥
 
 
 
@@ -47,7 +47,7 @@ var pageArr = [
 
 var requireArr = baseArr.concat(controlArr)
 
-require.async(requireArr, function(av,Going,Routing) 
+require.async(requireArr, function(Going,Routing) 
 {
 	//路由和单页面配置初始化
 	Routing.initialize({
@@ -101,3 +101,10 @@ require.async(requireArr, function(av,Going,Routing)
 	
 });
 ```
+
+###思路：
+1. 配置pageArr，指定每个页面的路由规则和对应的components模块；利用Routing在hashchange时匹配对应路由然后异步加载该模块。完成路由对页面模块文件的映射
+
+![](http://mansonchor.github.io/mobile_web_frame/images/Routing_Going_demo.jpg)
+
+2. asasg
