@@ -103,12 +103,17 @@ require.async(requireArr, function(Going,Routing)
 ```
 
 ###思路：
-1. 配置pageArr，指定每个页面的路由规则和对应的components模块；利用Routing在hashchange时匹配对应路由然后异步加载该模块。完成路由对页面模块文件的映射
+- 1.配置pageArr，指定每个页面的路由规则和对应的components模块；利用Routing在hashchange时匹配对应路由然后异步加载该模块。完成路由对页面模块文件的映射
 
 ![](http://mansonchor.github.io/mobile_web_frame/images/Routing_Going_demo.jpg)
 
-2. 页面模块文件exports一个page_options，模块异步加载完成后，利用Going和page_options新增一个页面。完成路由对页面控制的映射
+- 2.页面模块文件exports一个page_options，模块异步加载完成后，利用Going和page_options新增一个页面。完成路由对页面控制的映射 [page_options详细参数](https://github.com/mansonchor/Going#page_controleradd_pagepage_id--page_options)
 
-[page_options详细参数](https://github.com/mansonchor/Going#page_controleradd_pagepage_id--page_options)
+- 3.每个页面模块独立控制一个页面；通过Going暴露的各种事件加强对页面的控制 和 业务的支撑
 
-3. 每个页面模块独立控制一个页面；通过Going暴露的各种事件加强对页面的控制 和 业务的支撑
+
+##方案的实践
+
+后续会补充分享 做SPA时经常会遇到的一些需求点，痛点。其实这个方案也是我不断碰到这些点和踩坑而来的
+
+###TO BE CONTINUE
