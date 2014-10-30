@@ -103,7 +103,7 @@ require.async(requireArr, function(Going,Routing)
 ```
 
 ###思路：
-- 1.配置pageArr，指定每个页面的路由规则和对应的components模块；利用Routing在hashchange时匹配对应路由然后异步加载该模块。完成路由对页面模块文件的映射
+- 1.配置pageArr，指定每个页面的路由规则和对应的components模块；利用Routing在hashchange时匹配对应路由，然后利用scrat.js 异步加载该模块。完成路由对页面模块文件的映射
 
 ![](http://mansonchor.github.io/mobile_web_frame/images/Routing_Going_demo.jpg)
 
